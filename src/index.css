@@ -13,3 +13,6 @@
 @import url('./blocks/pokemon/pokemon.css');
 @import url('./blocks/pokemon/pokemon_img.css');
 @import url('./blocks/pokemon/poke-sound.css');
+@import url('./blocks/preloader/preloader.css');
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__links/footer__links.css');

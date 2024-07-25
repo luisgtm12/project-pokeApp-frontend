@@ -1,0 +1,31 @@
+.footer{
+  color: red;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  font-family: 'Pokemon Solid';
+}
+
+.footer p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer__links {
+  margin-top: 10px;
+}
+
+.footer__links a {
+  color: yellow;
+  text-decoration: none;
+  margin: 0 10px;
+
+  line-height: normal;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
