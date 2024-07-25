@@ -1,0 +1,11 @@
+.pokemon{
+  border: 1px solid #080808;
+  width: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  background-color: #eee048;
+  color: rgb(37, 36, 39);
+  font-family: 'Pokemon Solid';
+}

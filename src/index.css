@@ -1,5 +1,13 @@
 @import url('./blocks/vendor/normalize.css');
+@import url('./root/root.css');
+@import url('https://fonts.cdnfonts.com/css/pokemon-hollow');
 @import url('./blocks/header/header.css');
 @import url('./blocks/header/_img/header_img.css');
+@import url('./blocks/header/__search/header__search.css');
+@import url('./blocks/header/__search/_input/header__search_input.css');
+@import url('./blocks/header/__search/_button/header__search_button.css');
+@import url('./blocks/header/__search/_button/header__clear_button.css');
 @import url('./blocks/welcome/welcome.css');
 @import url('./blocks/welcome/_img/welcome_img.css');
+@import url('./blocks/pokemon/pokedex.css');
+@import url('./blocks/pokemon/pokemon.css');

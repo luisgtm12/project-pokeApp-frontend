@@ -1,4 +1,9 @@
 .welcome_img{
+  position: fixed; /* Hace que el fondo esté fijo */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
