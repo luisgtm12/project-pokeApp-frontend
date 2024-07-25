@@ -1,6 +1,6 @@
 @import url('./blocks/vendor/normalize.css');
 @import url('./root/root.css');
-@import url('https://fonts.cdnfonts.com/css/pokemon-hollow');
+@import url('./fonts/fonts.css');
 @import url('./blocks/header/header.css');
 @import url('./blocks/header/_img/header_img.css');
 @import url('./blocks/header/__search/header__search.css');
