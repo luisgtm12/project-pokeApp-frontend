@@ -9,7 +9,11 @@ function Welcome({ pokemons }){
         <img src={fondo} alt="fondo de bievenida" className="welcome_img"/>
         <div className="pokedex">
         {pokemons.map((pokemon, index) => (
-          <Pokemon key={index} id={index} name={pokemon.name} image={pokemon.image} />
+          <Pokemon key={index}
+            id={pokemon.id} 
+            name={pokemon.name} 
+            image={pokemon.image} 
+            sound={pokemon.sound}/>
         ))}
       </div>
       </div>

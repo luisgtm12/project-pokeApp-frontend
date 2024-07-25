@@ -11,3 +11,5 @@
 @import url('./blocks/welcome/_img/welcome_img.css');
 @import url('./blocks/pokemon/pokedex.css');
 @import url('./blocks/pokemon/pokemon.css');
+@import url('./blocks/pokemon/pokemon_img.css');
+@import url('./blocks/pokemon/poke-sound.css');

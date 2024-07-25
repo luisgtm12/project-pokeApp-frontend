@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import Main from './Main';
 import Welcome from './Welcome';
-import { fetchPokemons, searchPokemon } from '../utils/api';
+import Preloader from './Preloader';
+import Footer from './Footer';
+import { getAllPokemons} from '../utils/api';
 
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
   const [filteredPokemons, setFilteredPokemons] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     const getPokemons = async () => {
       try {
-        const pokemonData = await fetchPokemons();
+        const pokemonData = await getAllPokemons();
         setPokemons(pokemonData);
         setFilteredPokemons(pokemonData);
+        setLoading(false);
       } catch (error) {
         console.error('Error fetching Pokémon data:', error);
       }
@@ -39,8 +43,10 @@ function App() {
   }
   return (
     <div className="page">
+      {loading ? <Preloader /> : null}
       <Main onSearch={handleSearch} onClear={handleClear}/>
       <Welcome pokemons={filteredPokemons} />
+      <Footer/>
     </div>
   );
 }

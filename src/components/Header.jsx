@@ -1,5 +1,5 @@
 import logo from "../images/klipartz.com.png"
-import SearchBar from "./SearchBar.js";
+import SearchBar from "./SearchBar";
 
 function Header ({ onSearch,onClear }){
   return(

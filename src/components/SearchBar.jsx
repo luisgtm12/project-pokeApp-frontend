@@ -29,7 +29,7 @@ function SearchBar({ onSearch, onClear }){
         <img className="header__search_button-img" src={search} alt="search"/>
       </button>
       <button className="header__clear_button" onClick={handleClear}>
-        Limpiar
+        Limpiar busqueda
       </button>
     </div>
   )
