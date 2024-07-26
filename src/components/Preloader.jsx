@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
-function Preloader(){
-  return(
-    <div className="preloader">
-    <div className="spinner"></div>
-  </div>
-  )
+function Preloader() {
+  return (
+    <>
+      <div className="preloader">
+        <div className="spinner"></div>
+      </div>
+    </>
+  );
 }
 
 export default Preloader;

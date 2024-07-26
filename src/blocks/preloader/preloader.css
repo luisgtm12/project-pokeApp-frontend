@@ -8,6 +8,8 @@
   justify-content: center;
   align-items: center;
   background-image: url('/src/images/fondo1.png');
+  background-repeat: no-repeat;
+  object-fit: contain;
   z-index: 9999;
 }
 

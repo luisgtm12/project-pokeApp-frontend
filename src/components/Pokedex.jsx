@@ -2,7 +2,7 @@ import React from 'react';
 import fondo from '../images/fondo2.png';
 import Pokemon from './Pokemon';
 
-function Welcome({ pokemons }){
+function Pokedex({ pokemons }){
   return(
     <>
       <div className="welcome">
@@ -21,4 +21,4 @@ function Welcome({ pokemons }){
   )
 }
 
-export default Welcome;
+export default Pokedex;

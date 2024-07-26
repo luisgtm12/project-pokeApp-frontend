@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './Main';
-import Welcome from './Welcome';
+import Pokedex from './Pokedex';
 import Preloader from './Preloader';
+import HomePage from './Homepage';
 import Footer from './Footer';
 import { getAllPokemons} from '../utils/api';
 
@@ -19,8 +21,9 @@ function App() {
         setPokemons(pokemonData);
         setFilteredPokemons(pokemonData);
         setLoading(false);
+
       } catch (error) {
-        console.error('Error fetching Pokémon data:', error);
+        console.error('Error al obtener datos de Pokémon:', error);
       }
     };
 
@@ -41,13 +44,32 @@ function App() {
   function handleClear(){
     setFilteredPokemons(pokemons);
   }
+
   return (
+    <Router>
     <div className="page">
-      {loading ? <Preloader /> : null}
-      <Main onSearch={handleSearch} onClear={handleClear}/>
-      <Welcome pokemons={filteredPokemons} />
-      <Footer/>
+      <Routes>
+        <Route path="/" element={
+          <>
+            {loading ? <Preloader /> : null}
+            <HomePage />
+          </>
+          }
+        />
+        <Route
+          path="/app"
+          element={
+            <>
+              {loading ? <Preloader /> : null}
+              <Main onSearch={handleSearch} onClear={handleClear} />
+              <Pokedex pokemons={filteredPokemons} />
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
     </div>
+  </Router>
   );
 }
 

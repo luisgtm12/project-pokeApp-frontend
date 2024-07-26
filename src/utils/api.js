@@ -19,7 +19,7 @@ export const getAllPokemons = async (limit = 151) => {
     );
     return pokemonData;
   } catch (error) {
-    console.error('Error fetching Pokémon data:', error);
+    console.error('Error al obtener datos de Pokémon:', error);
     throw error;
   }
 };
