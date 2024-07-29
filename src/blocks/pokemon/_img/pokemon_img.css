@@ -6,4 +6,5 @@
 
 .pokemon_img:hover{
   transform: scale(130%);
+  cursor: pointer;
 }

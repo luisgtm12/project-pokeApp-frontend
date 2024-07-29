@@ -1,11 +1,15 @@
-function Pokemon({ name, image,id,sound }){
+function Pokemon({ name, image,id,sound,onClick }){
   function playSound() {
     const audio = new Audio(sound);
     audio.play();
   };
   return(
     <div  className="pokemon">
-      <img className="pokemon_img" src={image} alt={`${name}-${id}`}/>
+      <img className="pokemon_img"
+      src={image} 
+      alt={`${name}-${id}`}
+      onClick={onClick}
+      />
       <hr></hr>
       <h3>{`${name} #${id}`}</h3>
       <button className="poke-sound" onClick={playSound}>Play</button>

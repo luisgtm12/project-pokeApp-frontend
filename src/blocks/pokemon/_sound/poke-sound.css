@@ -5,3 +5,7 @@
   margin-top: 10px;
   color:white;
 }
+
+.poke-sound:hover{
+  cursor: pointer;
+}
